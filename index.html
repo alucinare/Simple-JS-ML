@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
     <title>Simple MI Example</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
           <div class="sensor_3">3</div>
         </div>
 
-        <div class="wall">
+        <div class="wall" id="wall">
 
         </div>
 
@@ -31,6 +32,16 @@
 
       </div>
     </div>
+
+  <div class="debugArea">
+    <textarea id="debugTextarea" class="debugTextareaClass" rows="8" cols="80"></textarea>
+
+    <input type="text" id="stepsDone" value="0" style="width:50px" />
+
+    <input type="button" value="Start" onclick="runSim('1')" />
+
+    <input type="button" value="Stop" onclick="runSim('0')" />
+  </div>
 
   </body>
 </html>
